@@ -1,4 +1,4 @@
-package com.larapin.kotlinsub2.a.adapter
+package com.larapin.kotlinsub2.event
 
 import android.content.Context
 import android.support.v7.widget.RecyclerView

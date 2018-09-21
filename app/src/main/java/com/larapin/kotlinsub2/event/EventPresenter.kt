@@ -4,6 +4,7 @@ import com.google.gson.Gson
 import com.larapin.kotlinsub2.api.ApiRepository
 import com.larapin.kotlinsub2.api.TheSportDBApi
 import com.larapin.kotlinsub2.model.EventResponse
+import com.larapin.kotlinsub2.model.EventSearchResponse
 import org.jetbrains.anko.doAsync
 import org.jetbrains.anko.uiThread
 
@@ -27,4 +28,19 @@ class EventPresenter(private val view: EventView,
             }
         }
     }
+
+//    fun getEventSearch(name: String?){
+//        view.showLoading()
+//        doAsync {
+//            val data = gson.fromJson(apiRepository
+//                    .doRequest(TheSportDBApi.getEventbySearch(name)),
+//                    EventSearchResponse::class.java
+//            )
+//
+//            uiThread {
+//                view.hideLoading()
+//                view.showEventList(data.event)
+//            }
+//        }
+//    }
 }
